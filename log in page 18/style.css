@@ -1,0 +1,111 @@
+body{
+  margin: 0px;
+  background-image: url("NU.jpeg");
+  font-family: "Alegreya SC", serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-style: normal;
+  overflow: hidden;
+}
+
+h1{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 0px;
+  margin: 0px;
+  font-size: 50px;
+  
+}
+.navbar ul{
+  list-style-type: none;
+  background-color: rgb(54,64,142);
+  padding:0px;
+  margin: 0px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.header-NU{
+  padding: 0px;
+  background-color: rgb(211, 211, 72);
+  font-size: 120%;
+  padding-left: 20px;
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+}
+
+.navbar a:hover{
+  background-color: rgb(31, 33, 119);
+}
+
+.navbar li{
+  float: right;
+  padding-right: 4%;
+}
+
+.login-header {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  margin-left: 3%;
+}
+
+.container{
+ 
+}
+
+.infos {
+
+  width: 50%;
+  height: 500px;
+  border-radius: 25px;
+  margin-left: 300px;
+  padding: 100px;
+  background: linear-gradient(to left, #66ccff 0%, #ffffcc 100%);
+  background-blend-mode: luminosity;
+  
+}
+
+.profile-image {
+  border-radius: 50%;
+  display: inline-block;
+  
+}
+
+.name-section {
+  font-size: 30px;
+  text-align: center;
+  float: right;
+  margin-left: 120px;
+  margin-top: 70px;
+}
+
+.eval-button, .consult-button {
+  background-color: rgb(2, 158, 255);
+  color: white;
+  border: none;
+  height: 90px;
+  width: 200px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+  vertical-align: bottom;
+  margin-left: 20%;
+}
+
+.eval-button:hover, .consult-button:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.30);
+}
+
+.below-header{
+  background-color: rgb(54,64,142);
+  font-size: 30px;
+  padding-left: 3%;
+  color: white;
+}
