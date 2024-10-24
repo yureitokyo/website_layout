@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Portal</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,700;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            background-image: url("nu1.jpg");
+            font-family: "Alegreya SC", serif;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            overflow: hidden;
+        }
+
+        .header-NU {
+            padding: 0;
+            background-color: rgb(211, 211, 72);
+            font-size: 120%;
+            padding-left: 40px;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            background-color: rgb(54, 64, 142);
+            padding: 0;
+            margin: 0;
+            margin-bottom: 20px; /* Adjusted to make space for containers */
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 5 px;
+            display: block;
+        }
+
+        .navbar a:hover {
+            background-color: rgb(31, 33, 119);
+        }
+
+        .navbar li {
+            float: right;
+            padding-right: 4%;
+            font-size: 20px;
+        }
+
+        .login-header {
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+            margin-left: 3%;
+            font-weight: 800;
+        }
+
+        .footer {
+            background-color: rgb(54, 64, 142);
+            font-size: 30px;
+            padding-left: 3%;
+            color: white;
+            font-weight: 800;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            margin-top: 5%;
+        }
+
+        .container {
+            padding: 65px;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 200px;
+            margin: 0;
+            display: flex;
+            color: white;
+            box shadow:0 4px 8px rgba(0,0,0,0.1);
+            font-size: 18px;
+
+        }
+
+        #container1 { background-image:linear-gradient(#8E79F0, #57B2F2);
+                     position:absolute; top: 180px; left:240px;>
+                     }
+        #container2 { background-image:linear-gradient(#8E79F0, #57B2F2);
+                      position:absolute; top: 180px; right:240px;>
+                       }
+        #container3 { background-image:linear-gradient(#8E79F0, #57B2F2); 
+                      position:absolute; bottom: 150px; left:240px;>
+}
+        #container4 { background-image:linear-gradient(#8E79F0, #57B2F2);	
+                      position:absolute; bottom: 150px; right:240px }
+ 
+        .container-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Centering in full viewport height */
+            flex-wrap: wrap; /* Allows containers to wrap to the next line */
+        }
+    </style>
+</head>
+<body>
+    <div class="header-NU">
+        <i class="fa-solid fa-arrow-left"></i> 
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <p class="login-header">AboutPortal</p>
+            <li><a href="#"><h1><u>About Us</u></h1></a></li>
+        </ul>
+    </nav>
+
+    <div class="container-wrapper">
+        <div class="container" id="container1">VISION & MISSION 1</div>
+        <div class="container" id="container2">CORE VALUES</div>
+        <div class="container" id="container3">BOARD OF DIRECTORS</div>
+        <div class="container" id="container4">COMPUTER SCIENCE</div>
+    </div>
+
+    <footer class="footer">
+        <p>National University</p>
+    </footer>
+</body>
+</html>
