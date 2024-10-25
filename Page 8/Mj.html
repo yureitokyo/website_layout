@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,700;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+  
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="header-NU">
+    
+        <i class="fa-solid fa-arrow-left"></i> 
+    </div>
+  
+<nav class="navbar">
+    <ul>
+        <p class="login-header">SignUpPortal</p>
+        <li><a href="#"><h1><u>About Us</u></h1></a></li>
+    </ul>
+</nav>
+
+<div class="form-container">
+    <div class="radio-group">
+        <label><input type="radio" name="role" value="Teacher"> Teacher</label>
+        <label><input type="radio" name="role" value="Student"> Student</label>
+    </div>
+
+    <form>
+        <div class="form-group">
+            <input type="text" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <input type="tel" placeholder="Contact Number">
+        </div>
+        <div class="form-group">
+            <input type="email" placeholder="Email Address">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Username">
+        </div>
+        <div class="form-group">
+            <input type="password" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <input type="password" placeholder="Confirm Password">
+        </div>
+        <div class="save-button">Save</div>
+    </form>
+</div>
+
+<footer class="footer">
+  <p>National University</p>
+</footer>
+
+<style>
+
+body{
+    margin: 0px;
+    margin-top: auto;
+    background-image: url("NU building.jpg");
+    font-family: "Alegreya SC", serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-style: normal;
+    overflow: hidden;
+  
+}
+
+h1{
+    text-align: left;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+  
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    background-color: rgb(54,64,142);
+    padding:0px;
+    margin: 0px;
+    margin-bottom: 200px;
+}
+.header-NU{
+    padding: 0px;
+    background-color: rgb(211, 211, 72);
+    font-size: 120%;
+    padding-left: 40px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+
+.navbar a:hover{
+    background-color: rgb(31, 33, 119);
+}
+
+.navbar li{
+    float: right;
+     padding-right: 4%;
+    font-size: 20px;
+  
+}
+
+.login-header {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-left: 3%;
+    font-weight: 800;
+}
+
+.log-a {
+    color: rgb(0, 0, 104);
+    font-size: 30px;
+    width: 350px;
+    margin-left: 150px;
+    font-family: "Alegreya SC", serif;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.form-container {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin: auto ;
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: center;
+    justify-content: end;  
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: center;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.radio-group label {
+    font-weight: bold;
+    font-size: 18px;
+    }
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group input[type="text"], 
+.form-group input[type="password"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.save-button {
+    display: block;
+    width: 100px;
+    margin: 20px auto 0;
+    padding: 10px;
+    background-color: #ffdd57;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background-color: #ffc107;
+}
+
+.footer {
+    background-color: rgb(54,64,142);
+    font-size: 30px;
+    padding-left: 3%;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 5%;
+}
+</style>
+</body>
+</html>
