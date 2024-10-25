@@ -1,0 +1,140 @@
+/* General styling */
+* {
+    font-family: "Alegreya SC", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alegreya SC', sans-serif;
+    background-color: #E0E8F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-image: url('NU.jpg'); /* Placeholder for background image */
+    background-size: cover;
+    background-position: center;
+}
+.welcome-bd {
+    border-left: solid;
+    border-left-color: yellow;
+    color: white;
+    font-size: 40px;
+    margin-left: 50px;
+  }
+  .about-us {
+    font-size: 20px;
+    padding-left: 60%;
+    color: white;
+  }
+header {
+    width: 100%; /* full width */
+}
+.yellow-stripe {
+    background-color: yellow;
+    height: 5px; /* adjust the thickness of the yellow stripe */
+}
+
+.blue-stripe {
+    background-color: #002f87; /* this is a common shade of dark blue */
+    height: 20px; /* adjust the thickness of the blue stripe */
+}
+header h1 {
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Text BG */
+.content-box { 
+    background-color: white;
+    padding: 160px;
+    border-radius: 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.384);
+    text-align: center;
+    max-width: 2000px;
+    width: 125%;
+    background: linear-gradient(135deg, #d1f6c4e8, #9bbaf4ec);
+}
+
+/* Text configuration */
+.content-box h2 {
+    font-size: 6em;
+    font-weight: bold;
+    color: #3949AB;
+    text-align: left;
+    font-family: fantasy
+}
+
+.content-box h2 span {
+    color: black;
+    font-weight: normal;
+    text-align: left;
+}
+
+.content-box p {
+    font-family:'Arial';
+    margin-top: 20px;
+    font-size: 1.4em;
+    font-weight: 500;
+    line-height: 1.5;
+    color: black;
+    text-align: left;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    flex: content;
+   
+}
+
+.login {
+    background-color: #F1C40F;
+    color: black;
+}
+.signup {
+    background-color: white;
+    color: black;
+}
+
+.buttons button:hover {
+    background-color: #f39c12;
+}
+
+/*national university*/
+footer {
+    background-color: #3D449F;
+    color: white;
+    text-align: left;
+    padding: 8px;
+    padding-right: 50%;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 5px solid #F1C40F;
+}
