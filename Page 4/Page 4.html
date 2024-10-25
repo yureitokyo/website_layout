@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,700;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+  
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header-NU">
+    
+    <i class="fa-solid fa-arrow-left"></i>
+
+    
+  </div>
+  
+  <nav class="navbar">
+  <ul>
+    <p class="login-header">ForgetPasswordPortal</p>
+    <li><a href="#"><h1><u>About Us</u></h1></a></li>
+  </ul>
+  </nav>
+
+  <div class="email-container">
+    <img src="email.png" alt="Reset Email Icon">
+    <h2>Check in your Email!</h2>
+    <p>We just emailed you with the instructions to reset your password</p>
+</div>
+<footer class="footer">
+  <p>National University</p>
+</footer>
+
+<style>
+    body{
+  margin: 0px;
+  background-image: url("NU building.jpg");
+  font-family: "Alegreya SC", serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-style: normal;
+  overflow: hidden;
+}
+
+h1{
+  text-align: left;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+  
+}
+.navbar ul{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  background-color: rgb(54,64,142);
+  padding:0px;
+  margin: 0px;
+  margin-bottom: 200px;
+}
+.header-NU{
+  padding: 0px;
+  background-color: rgb(211, 211, 72);
+  font-size: 120%;
+  padding-left: 40px;
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+}
+
+.navbar a:hover{
+  background-color: rgb(31, 33, 119);
+}
+
+.navbar li{
+  float: right;
+  padding-right: 4%;
+  font-size: 20px;
+  
+}
+
+.login-header {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  margin-left: 3%;
+  font-weight: 800;
+}
+
+.log-a {
+  color: rgb(0, 0, 104);
+  font-size: 30px;
+  width: 350px;
+  margin-left: 150px;
+  font-family: "Alegreya SC", serif;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.email-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50px;
+  width: 800px;
+  height: 150px;
+  padding: 100px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.email-container img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.email-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.email-container p {
+  font-size: 16px;
+  color: gray;
+}
+
+.footer {
+  background-color: rgb(54,64,142);
+  font-size: 30px;
+  padding-left: 3%;
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+}
+</style>
+</body>
+</html>

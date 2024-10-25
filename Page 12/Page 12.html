@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board of Directors Portal</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,700;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-NU">
+        <i class="fa-solid fa-arrow-left"></i>
+        <p class="title">Board of Directors Portal</p>
+    </div>
+
+    <div class="board-container">
+        <h2>Board of Directors</h2>
+        <div class="board">
+            <div class="left-column">
+                <div class="member">
+                    <img src="dr. sy.jpg" alt="Dr. Hans T. Sy">
+                    <div class="info">
+                        <h3>Dr. Hans T. Sy</h3>
+                        <p>Chairman of the Board</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="renato ermita.jpg" alt="Dr. Renato Carlos H. Ermita Jr.">
+                    <div class="info">
+                        <h3>Dr. Renato Carlos H. Ermita Jr.</h3>
+                        <p>National University President</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="ocampo.jpg" alt="Nilo Ocampo">
+                    <div class="info">
+                        <h3>Nilo Ocampo</h3>
+                        <p>Board Member</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="Herbert sy.jpg" alt="Herbert Sy">
+                    <div class="info">
+                        <h3>Herbert Sy</h3>
+                        <p>Board Member</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="member">
+                    <img src="teddy ocampo.jpg" alt="Teddy Ocampo">
+                    <div class="info">
+                        <h3>Teddy Ocampo</h3>
+                        <p>National University Former President</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="Susan.jpg" alt="Susan Dimacali">
+                    <div class="info">
+                        <h3>Susan Dimacali</h3>
+                        <p>National University Board Member</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="Elizabeth sy.jpg" alt="Elizabeth Sy">
+                    <div class="info">
+                        <h3>Elizabeth Sy</h3>
+                        <p>National University Board Member</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>NATIONAL UNIVERSITY</p>
+    </footer>
+
+    <style>
+        body {
+            background-image: url('National U.webp');
+            margin: 0;
+            font-family: "Alegreya SC", serif;
+            background-size: cover;
+            font-style: normal;
+            overflow-x: hidden;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .header-NU {
+            display: flex;
+            align-items: center;
+            background-color: rgb(211, 211, 72);
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .header-NU i {
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .title {
+            font-size: 24px;
+            color: rgb(54, 64, 142);
+            margin: 0;
+        }
+
+        .board-container {
+    background: linear-gradient(to right, rgba(205, 255, 216, 0.7), rgba(148, 185, 255, 0.7)); 
+    margin: 40px auto;
+    padding: 30px;
+    width: 80%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+}
+
+        h2 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: rgb(54, 64, 142);
+        }
+
+        .board {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .left-column, .right-column {
+            width: 45%;
+        }
+
+        .member {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .member img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border: 2px solid #333;
+            object-fit: cover;
+        }
+
+        .info h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: black;
+        }
+
+        .info p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: rgb(54, 64, 142);
+            color: white;
+            font-size: 18px;
+            text-align: LEFT;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .board {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-column, .right-column {
+                width: 100%;
+            }
+
+            .member img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    </style>
+</body>
+</html>
