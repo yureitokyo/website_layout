@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header-NU">
+        <i class="fa-solid fa-arrow-left"></i>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <p class="login-header">StudentProfilePortal</p>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="https://via.placeholder.com/150" alt="Profile Image">
+            </div>
+            <div class="student-info-box">
+                <table class="student-info-table">
+                    <tr class="header-row">
+                        <td class="header-cell">LAST NAME, FIRST NAME M.I.</td>
+                    </tr>
+                    <tr>
+                        <td class="info-cell">Student ID Number</td>
+                    </tr>
+                    <tr>
+                        <td class="info-cell">Section</td>
+                    </tr>
+                    <tr>
+                        <td class="info-cell">Gender</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="edit-links">
+                <a href="#" class="btn">Edit Photo</a><br>
+                <a href="#" class="btn">Edit Info</a><br>
+                <a href="#" class="btn">Gallery</a>
+            </div>
+        </div>
+            <div class="details-section">
+                <div class="details-box">
+                    <p><strong>Date of Birth:</strong> October 6, 2005</p>
+                    <p><strong>Level:</strong> Freshman</p>
+                    <p><strong>Program:</strong> Bachelor of Science in Computer Science with Specialization in Digital Forensics</p>
+                    <p><strong>Contact Number:</strong> +63 983 827 2750</p>
+                    <p><strong>Email Address:</strong> name@gmail.com</p>
+                    <p><strong>Home Address:</strong> 123 Manila, Philippines</p>
+                    <p><strong>Parent/Guardian Name:</strong> Name</p>
+                    <p><strong>Parent/Guardian Contact Number:</strong> +63 912 987 6543</p>
+                    <p><strong>Emergency Contact Name:</strong> Name</p>
+                    <p><strong>Emergency Contact Number:</strong> +63 942 192 7890</p>
+                    <p><strong>Favorites:</strong> Not yet added</p>
+                </div>
+            </div>
+    </div>
+
+    <footer class="footer">
+        <p>National University</p>
+    </footer>
+
+<style>
+    *   {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: url(National\ U.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .header-NU {
+        background-color: #d3d348;
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        background-color: #36408e;
+        padding: 15px 20px;
+    }
+
+    .login-header {
+        font-size: 28px;
+        color: white;
+        font-weight: 700;
+        font-family: 'Merriweather', serif;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 50px auto;
+        display: flex;
+        background: linear-gradient(to right, rgba(205, 255, 216, 0.7), rgba(148, 185, 255, 0.7)); 
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+    }
+
+    .profile-section {
+        width: 35%;
+        text-align: center;
+        border-right: 1px solid #ddd;
+        padding-right: 30px;
+    }
+
+    .profile-image img {
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        border: 3px solid #36408e;
+        margin-bottom: 10px;
+    }
+
+.student-info-box {
+  width: 250px; 
+  margin: 0 auto; 
+}
+
+.student-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.header-row .header-cell {
+  background-color: #36408e;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px 0;
+  border: 1px solid #000; 
+}
+
+.info-cell {
+  background-color: #f9f9f9; 
+  padding: 6px 0;
+  font-size: 13px;
+  border: 1px solid #ddd; 
+  color: #333; 
+}
+
+
+.info-cell:last-child {
+  border-left: 1px solid #ddd;
+}
+
+.edit-links {
+    margin-top: 20px;
+  }
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: white;
+    background-color: #36408e;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #2b3170;
+    transition: 0.3s;
+}
+
+.details-section {
+    width: 65%;
+    padding-left: 30px;
+}
+
+.details-box {
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px; 
+}
+
+.details-section p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.details-section p strong {
+    color: #333;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #36408e;
+    font-size: 18px;
+    color: white;
+    padding: 15px 20px;
+    text-align: left;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.profile-section {
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.details-section {
+    width: 100%;
+    padding-left: 0;
+}
+
+</style>
+</body>
+</html>
