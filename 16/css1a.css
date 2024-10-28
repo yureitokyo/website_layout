@@ -1,0 +1,274 @@
+/* Reset default browser padding and margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alegreya SC', serif;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: url('background.png');
+    background-size: cover; 
+    background-position: center; 
+}
+.faculty-grid {
+    position: relative;
+    width: 100%; 
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hexagon {
+    width: 120px; 
+    height: 105px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: transparent;
+    position: relative; 
+    overflow: hidden;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.hexagon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.2s;
+}
+
+.hexagon:hover {
+    transform: scale(1.1);
+}
+.hexagon:after {
+    content: attr(data-hover); /* Display text using data attribute */
+    position: absolute;
+    bottom: -30px; /* Position text below the hexagon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Background for the text */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s; /* Smooth appearance */
+    white-space: nowrap; /* Prevent text from breaking to the next line */
+}
+
+.hexagon:hover:after {
+    opacity: 1; /* Show text on hover */
+}
+
+/* Positioning for each faculty member */
+.faculty1 {
+    top: 10%; 
+    left: 45.5%; 
+
+}
+
+.faculty2 {
+    top: 28.8%; 
+    left: 4%; 
+
+}
+
+.faculty3 {
+    top: 42%; 
+    left: -3.5%; 
+
+}
+
+.faculty4 {
+    top: 55%; 
+    left: -11%; 
+
+}
+
+.faculty5 {
+    top: 24%; 
+    left: -8%; 
+
+}
+
+.faculty6 {
+    top: 36%; 
+    left: -15%; 
+
+}
+
+.faculty7 {
+    top: 50%; 
+    left: -22%; 
+
+}
+
+.faculty8 {
+    top: 35%; 
+    left: -21%; 
+
+}
+
+.faculty9 {
+    top: 46%; 
+    left: -28.1%; 
+
+}
+
+.faculty10 {
+    top: 56%; 
+    left: -35.8%; 
+l
+}
+
+.faculty11 {
+    top: 66%; 
+    left: -43%; 
+
+}
+
+.faculty12 {
+    top: 23.9%; 
+    left: -44%; 
+
+}
+
+.faculty13 {
+    top: 38%; 
+    left: -50%; 
+
+}
+
+.faculty14 {
+    top: 15%; 
+    left: 38%; 
+
+}
+
+.faculty15 {
+    top: -3.8%; 
+    left: 38.7%; 
+
+}
+
+.faculty16 {
+    top: 6.5%; 
+    left: 31.8%; 
+
+}
+
+.faculty17 {
+    top: 17%; 
+    left: 24%; 
+
+}
+
+.faculty18 {
+    top: 27%; 
+    left: 17.5%; 
+
+}
+
+.faculty19 {
+    top: 37.5%; 
+    left: 10%; 
+
+}
+
+.faculty20 {
+    top: -3.7%; 
+    left: 11%; 
+
+}
+
+.faculty21 {
+    top: 7%; 
+    left: 4%; 
+
+}
+
+.faculty22 {
+    top: 17%; 
+    left: -3%; 
+
+}
+
+.faculty23 {
+    top: 27%; 
+    left: -10%; 
+
+}
+
+.faculty24 {
+    top: 37.5%; 
+    left: -17.8%; 
+
+}
+
+.faculty25 {
+    top: -3%; 
+    left: -18.3%; 
+
+}
+
+.faculty26 {
+    top: 7%; 
+    left: -24%; 
+
+}
+
+.faculty27 {
+    top: -16.3%; 
+    left: 49%; 
+
+}
+
+.faculty28 {
+    top: -6%; 
+    left: 42%; 
+
+}
+
+.faculty29 {
+    top: 4%; 
+    left: 35%; 
+
+}
+
+.faculty30 {
+    top: -38%; 
+    left: 36.1%; 
+
+}
+
+.faculty31 {
+    top: -26%; 
+    left: 28%; 
+
+}
+
+.faculty32 {
+    top: -16%; 
+    left: 21%; 
+
+}
+
+.faculty33 {
+    top: -5.5%; 
+    left: 14%; 
+}
+
+.faculty34 {
+    top: -54%; 
+    left: -7.5%; 
+}
+
+.faculty35 {
+    top: -47%; 
+    left: -8%; 
+}
